@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCompraDet" targetNamespace="http://tempuri.org/dsCompraDet.xsd" xmlns:mstns="http://tempuri.org/dsCompraDet.xsd" xmlns="http://tempuri.org/dsCompraDet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCompraDet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="dsCompraDet" msprop:Generator_DataSetName="dsCompraDet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="spCompraDet" msprop:Generator_RowEvHandlerName="spCompraDetRowChangeEventHandler" msprop:Generator_RowDeletedName="spCompraDetRowDeleted" msprop:Generator_RowDeletingName="spCompraDetRowDeleting" msprop:Generator_RowEvArgName="spCompraDetRowChangeEvent" msprop:Generator_TablePropName="spCompraDet" msprop:Generator_RowChangedName="spCompraDetRowChanged" msprop:Generator_RowChangingName="spCompraDetRowChanging" msprop:Generator_TableClassName="spCompraDetDataTable" msprop:Generator_RowClassName="spCompraDetRow" msprop:Generator_TableVarName="tablespCompraDet" msprop:Generator_UserTableName="spCompraDet">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Compra" msprop:Generator_ColumnPropNameInRow="Id_Compra" msprop:Generator_ColumnPropNameInTable="Id_CompraColumn" msprop:Generator_ColumnVarNameInTable="columnId_Compra" msprop:Generator_UserColumnName="Id_Compra" type="xs:int" minOccurs="0" />
+              <xs:element name="Id_Producto" msprop:Generator_ColumnPropNameInRow="Id_Producto" msprop:Generator_ColumnPropNameInTable="Id_ProductoColumn" msprop:Generator_ColumnVarNameInTable="columnId_Producto" msprop:Generator_UserColumnName="Id_Producto" type="xs:int" minOccurs="0" />
+              <xs:element name="Cantidad_Compra" msprop:Generator_ColumnPropNameInRow="Cantidad_Compra" msprop:Generator_ColumnPropNameInTable="Cantidad_CompraColumn" msprop:Generator_ColumnVarNameInTable="columnCantidad_Compra" msprop:Generator_UserColumnName="Cantidad_Compra" type="xs:int" minOccurs="0" />
+              <xs:element name="Precio_Compra" msprop:Generator_ColumnPropNameInRow="Precio_Compra" msprop:Generator_ColumnPropNameInTable="Precio_CompraColumn" msprop:Generator_ColumnVarNameInTable="columnPrecio_Compra" msprop:Generator_UserColumnName="Precio_Compra" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total_Compra" msprop:Generator_ColumnPropNameInRow="Total_Compra" msprop:Generator_ColumnPropNameInTable="Total_CompraColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_Compra" msprop:Generator_UserColumnName="Total_Compra" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

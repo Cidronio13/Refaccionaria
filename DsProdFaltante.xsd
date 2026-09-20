@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsProdFaltante" targetNamespace="http://tempuri.org/DsProdFaltante.xsd" xmlns:mstns="http://tempuri.org/DsProdFaltante.xsd" xmlns="http://tempuri.org/DsProdFaltante.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="REFACCIONRIAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="REFACCIONRIAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Refaccionaria.Properties.Settings.GlobalReference.Default.REFACCIONRIAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_Prod_FaltanteTableAdapter" GeneratorDataComponentClassName="VW_Prod_FaltanteTableAdapter" Name="VW_Prod_Faltante" UserDataComponentName="VW_Prod_FaltanteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="REFACCIONRIAConnectionString (Settings)" DbObjectName="REFACCIONRIA.dbo.VW_Prod_Faltante" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_Producto, Descripcion_Producto, Stock_Producto, Stock_Minimo_Producto, Stock_Maximo_Producto, Categoria, Proveedor FROM dbo.VW_Prod_Faltante</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Producto" DataSetColumn="Id_Producto" />
+              <Mapping SourceColumn="Descripcion_Producto" DataSetColumn="Descripcion_Producto" />
+              <Mapping SourceColumn="Stock_Producto" DataSetColumn="Stock_Producto" />
+              <Mapping SourceColumn="Stock_Minimo_Producto" DataSetColumn="Stock_Minimo_Producto" />
+              <Mapping SourceColumn="Stock_Maximo_Producto" DataSetColumn="Stock_Maximo_Producto" />
+              <Mapping SourceColumn="Categoria" DataSetColumn="Categoria" />
+              <Mapping SourceColumn="Proveedor" DataSetColumn="Proveedor" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsProdFaltante" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DsProdFaltante" msprop:Generator_DataSetName="DsProdFaltante">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_Prod_Faltante" msprop:Generator_RowEvHandlerName="VW_Prod_FaltanteRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_Prod_FaltanteRowDeleted" msprop:Generator_RowDeletingName="VW_Prod_FaltanteRowDeleting" msprop:Generator_RowEvArgName="VW_Prod_FaltanteRowChangeEvent" msprop:Generator_TablePropName="VW_Prod_Faltante" msprop:Generator_RowChangedName="VW_Prod_FaltanteRowChanged" msprop:Generator_RowChangingName="VW_Prod_FaltanteRowChanging" msprop:Generator_TableClassName="VW_Prod_FaltanteDataTable" msprop:Generator_RowClassName="VW_Prod_FaltanteRow" msprop:Generator_TableVarName="tableVW_Prod_Faltante" msprop:Generator_UserTableName="VW_Prod_Faltante">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Producto" msprop:Generator_ColumnPropNameInRow="Id_Producto" msprop:Generator_ColumnPropNameInTable="Id_ProductoColumn" msprop:Generator_ColumnVarNameInTable="columnId_Producto" msprop:Generator_UserColumnName="Id_Producto" type="xs:int" />
+              <xs:element name="Descripcion_Producto" msprop:Generator_ColumnPropNameInRow="Descripcion_Producto" msprop:Generator_ColumnPropNameInTable="Descripcion_ProductoColumn" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Producto" msprop:Generator_UserColumnName="Descripcion_Producto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock_Producto" msprop:Generator_ColumnPropNameInRow="Stock_Producto" msprop:Generator_ColumnPropNameInTable="Stock_ProductoColumn" msprop:Generator_ColumnVarNameInTable="columnStock_Producto" msprop:Generator_UserColumnName="Stock_Producto" type="xs:int" />
+              <xs:element name="Stock_Minimo_Producto" msprop:Generator_ColumnPropNameInRow="Stock_Minimo_Producto" msprop:Generator_ColumnPropNameInTable="Stock_Minimo_ProductoColumn" msprop:Generator_ColumnVarNameInTable="columnStock_Minimo_Producto" msprop:Generator_UserColumnName="Stock_Minimo_Producto" type="xs:int" />
+              <xs:element name="Stock_Maximo_Producto" msprop:Generator_ColumnPropNameInRow="Stock_Maximo_Producto" msprop:Generator_ColumnPropNameInTable="Stock_Maximo_ProductoColumn" msprop:Generator_ColumnVarNameInTable="columnStock_Maximo_Producto" msprop:Generator_UserColumnName="Stock_Maximo_Producto" type="xs:int" />
+              <xs:element name="Categoria" msprop:Generator_ColumnPropNameInRow="Categoria" msprop:Generator_ColumnPropNameInTable="CategoriaColumn" msprop:Generator_ColumnVarNameInTable="columnCategoria" msprop:Generator_UserColumnName="Categoria" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Proveedor" msprop:Generator_ColumnPropNameInRow="Proveedor" msprop:Generator_ColumnPropNameInTable="ProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnProveedor" msprop:Generator_UserColumnName="Proveedor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VW_Prod_Faltante" />
+      <xs:field xpath="mstns:Id_Producto" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

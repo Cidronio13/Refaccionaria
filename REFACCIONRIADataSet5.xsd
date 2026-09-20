@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="REFACCIONRIADataSet5" targetNamespace="http://tempuri.org/REFACCIONRIADataSet5.xsd" xmlns:mstns="http://tempuri.org/REFACCIONRIADataSet5.xsd" xmlns="http://tempuri.org/REFACCIONRIADataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="REFACCIONRIAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="REFACCIONRIAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Refaccionaria.Properties.Settings.GlobalReference.Default.REFACCIONRIAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_INFORMACION_COMPRATableAdapter" GeneratorDataComponentClassName="VW_INFORMACION_COMPRATableAdapter" Name="VW_INFORMACION_COMPRA" UserDataComponentName="VW_INFORMACION_COMPRATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="REFACCIONRIAConnectionString (Settings)" DbObjectName="REFACCIONRIA.dbo.VW_INFORMACION_COMPRA" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_Proveedor, Nombre_Proveedor, Direccion_Proveedor, Telefono_Proveedor, Correo_Proveedor, Id_Compra, Fecha_Compra, Importe_Compra, Id_Producto, Descripcion_Producto, Cantidad_Compra, Precio_Compra FROM dbo.VW_INFORMACION_COMPRA</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Proveedor" DataSetColumn="Id_Proveedor" />
+              <Mapping SourceColumn="Nombre_Proveedor" DataSetColumn="Nombre_Proveedor" />
+              <Mapping SourceColumn="Direccion_Proveedor" DataSetColumn="Direccion_Proveedor" />
+              <Mapping SourceColumn="Telefono_Proveedor" DataSetColumn="Telefono_Proveedor" />
+              <Mapping SourceColumn="Correo_Proveedor" DataSetColumn="Correo_Proveedor" />
+              <Mapping SourceColumn="Id_Compra" DataSetColumn="Id_Compra" />
+              <Mapping SourceColumn="Fecha_Compra" DataSetColumn="Fecha_Compra" />
+              <Mapping SourceColumn="Importe_Compra" DataSetColumn="Importe_Compra" />
+              <Mapping SourceColumn="Id_Producto" DataSetColumn="Id_Producto" />
+              <Mapping SourceColumn="Descripcion_Producto" DataSetColumn="Descripcion_Producto" />
+              <Mapping SourceColumn="Cantidad_Compra" DataSetColumn="Cantidad_Compra" />
+              <Mapping SourceColumn="Precio_Compra" DataSetColumn="Precio_Compra" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="REFACCIONRIADataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="REFACCIONRIADataSet5" msprop:Generator_DataSetName="REFACCIONRIADataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_INFORMACION_COMPRA" msprop:Generator_RowEvHandlerName="VW_INFORMACION_COMPRARowChangeEventHandler" msprop:Generator_RowDeletedName="VW_INFORMACION_COMPRARowDeleted" msprop:Generator_RowDeletingName="VW_INFORMACION_COMPRARowDeleting" msprop:Generator_RowEvArgName="VW_INFORMACION_COMPRARowChangeEvent" msprop:Generator_TablePropName="VW_INFORMACION_COMPRA" msprop:Generator_RowChangedName="VW_INFORMACION_COMPRARowChanged" msprop:Generator_RowChangingName="VW_INFORMACION_COMPRARowChanging" msprop:Generator_TableClassName="VW_INFORMACION_COMPRADataTable" msprop:Generator_RowClassName="VW_INFORMACION_COMPRARow" msprop:Generator_TableVarName="tableVW_INFORMACION_COMPRA" msprop:Generator_UserTableName="VW_INFORMACION_COMPRA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Proveedor" msprop:Generator_ColumnPropNameInRow="Id_Proveedor" msprop:Generator_ColumnPropNameInTable="Id_ProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnId_Proveedor" msprop:Generator_UserColumnName="Id_Proveedor" type="xs:int" />
+              <xs:element name="Nombre_Proveedor" msprop:Generator_ColumnPropNameInRow="Nombre_Proveedor" msprop:Generator_ColumnPropNameInTable="Nombre_ProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnNombre_Proveedor" msprop:Generator_UserColumnName="Nombre_Proveedor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Direccion_Proveedor" msprop:Generator_ColumnPropNameInRow="Direccion_Proveedor" msprop:Generator_ColumnPropNameInTable="Direccion_ProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnDireccion_Proveedor" msprop:Generator_UserColumnName="Direccion_Proveedor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono_Proveedor" msprop:Generator_ColumnPropNameInRow="Telefono_Proveedor" msprop:Generator_ColumnPropNameInTable="Telefono_ProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnTelefono_Proveedor" msprop:Generator_UserColumnName="Telefono_Proveedor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Correo_Proveedor" msprop:Generator_ColumnPropNameInRow="Correo_Proveedor" msprop:Generator_ColumnPropNameInTable="Correo_ProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnCorreo_Proveedor" msprop:Generator_UserColumnName="Correo_Proveedor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Compra" msprop:Generator_ColumnPropNameInRow="Id_Compra" msprop:Generator_ColumnPropNameInTable="Id_CompraColumn" msprop:Generator_ColumnVarNameInTable="columnId_Compra" msprop:Generator_UserColumnName="Id_Compra" type="xs:int" />
+              <xs:element name="Fecha_Compra" msprop:Generator_ColumnPropNameInRow="Fecha_Compra" msprop:Generator_ColumnPropNameInTable="Fecha_CompraColumn" msprop:Generator_ColumnVarNameInTable="columnFecha_Compra" msprop:Generator_UserColumnName="Fecha_Compra" type="xs:dateTime" />
+              <xs:element name="Importe_Compra" msprop:Generator_ColumnPropNameInRow="Importe_Compra" msprop:Generator_ColumnPropNameInTable="Importe_CompraColumn" msprop:Generator_ColumnVarNameInTable="columnImporte_Compra" msprop:Generator_UserColumnName="Importe_Compra" type="xs:decimal" />
+              <xs:element name="Id_Producto" msprop:Generator_ColumnPropNameInRow="Id_Producto" msprop:Generator_ColumnPropNameInTable="Id_ProductoColumn" msprop:Generator_ColumnVarNameInTable="columnId_Producto" msprop:Generator_UserColumnName="Id_Producto" type="xs:int" />
+              <xs:element name="Descripcion_Producto" msprop:Generator_ColumnPropNameInRow="Descripcion_Producto" msprop:Generator_ColumnPropNameInTable="Descripcion_ProductoColumn" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Producto" msprop:Generator_UserColumnName="Descripcion_Producto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cantidad_Compra" msprop:Generator_ColumnPropNameInRow="Cantidad_Compra" msprop:Generator_ColumnPropNameInTable="Cantidad_CompraColumn" msprop:Generator_ColumnVarNameInTable="columnCantidad_Compra" msprop:Generator_UserColumnName="Cantidad_Compra" type="xs:int" />
+              <xs:element name="Precio_Compra" msprop:Generator_ColumnPropNameInRow="Precio_Compra" msprop:Generator_ColumnPropNameInTable="Precio_CompraColumn" msprop:Generator_ColumnVarNameInTable="columnPrecio_Compra" msprop:Generator_UserColumnName="Precio_Compra" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

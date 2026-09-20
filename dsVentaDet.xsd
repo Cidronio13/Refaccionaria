@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsVentaDet" targetNamespace="http://tempuri.org/dsVentaDet.xsd" xmlns:mstns="http://tempuri.org/dsVentaDet.xsd" xmlns="http://tempuri.org/dsVentaDet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsVentaDet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsVentaDet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsVentaDet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="spVentaDet" msprop:Generator_RowClassName="spVentaDetRow" msprop:Generator_RowEvHandlerName="spVentaDetRowChangeEventHandler" msprop:Generator_RowDeletedName="spVentaDetRowDeleted" msprop:Generator_RowDeletingName="spVentaDetRowDeleting" msprop:Generator_RowEvArgName="spVentaDetRowChangeEvent" msprop:Generator_TablePropName="spVentaDet" msprop:Generator_RowChangedName="spVentaDetRowChanged" msprop:Generator_UserTableName="spVentaDet" msprop:Generator_RowChangingName="spVentaDetRowChanging" msprop:Generator_TableClassName="spVentaDetDataTable" msprop:Generator_TableVarName="tablespVentaDet">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Venta" msprop:Generator_UserColumnName="Id_Venta" msprop:Generator_ColumnPropNameInTable="Id_VentaColumn" msprop:Generator_ColumnPropNameInRow="Id_Venta" msprop:Generator_ColumnVarNameInTable="columnId_Venta" type="xs:int" minOccurs="0" />
+              <xs:element name="Id_Producto" msprop:Generator_UserColumnName="Id_Producto" msprop:Generator_ColumnPropNameInTable="Id_ProductoColumn" msprop:Generator_ColumnPropNameInRow="Id_Producto" msprop:Generator_ColumnVarNameInTable="columnId_Producto" type="xs:int" minOccurs="0" />
+              <xs:element name="Cantidad_Venta" msprop:Generator_UserColumnName="Cantidad_Venta" msprop:Generator_ColumnPropNameInTable="Cantidad_VentaColumn" msprop:Generator_ColumnPropNameInRow="Cantidad_Venta" msprop:Generator_ColumnVarNameInTable="columnCantidad_Venta" type="xs:int" minOccurs="0" />
+              <xs:element name="Precio_Venta" msprop:Generator_UserColumnName="Precio_Venta" msprop:Generator_ColumnPropNameInTable="Precio_VentaColumn" msprop:Generator_ColumnPropNameInRow="Precio_Venta" msprop:Generator_ColumnVarNameInTable="columnPrecio_Venta" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total_Venta" msprop:Generator_UserColumnName="Total_Venta" msprop:Generator_ColumnPropNameInTable="Total_VentaColumn" msprop:Generator_ColumnPropNameInRow="Total_Venta" msprop:Generator_ColumnVarNameInTable="columnTotal_Venta" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
